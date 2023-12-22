@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+	<title> Arvind Kumar | Full Stack Developer</title>
+
+
+	<meta name="description" content="I am a Software Engineer in technologies like Java, JavaScript, SQL, HTML, CSS, etc. I have been fortunate to handle large to small-scale web applications.`;">
+	<meta name="keywords"  content="resume, arvind kumar, developer, fullstack developer, engineer, software engineer, company, arvind, kumar">
+	<meta name="robots"  content="follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"> 
+
+	<meta property='viewport' content="width=device-width, initial-scale=1">
+
+	<meta property='og:title' content="Arvind Kumar | Full Stack Developer" >
+	<meta property='og:description' content="I am a Fresher">
+	<meta property='og:url' content="https://akumar2425.github.io/Portfolio/">
+	<meta property='og:locale' content="en_US" >
+	<meta property='og:type' content="Resume">
+	<meta property='og:image' content="https://akumar2425.github.io/Portfolio/media/Arvind-photo.png">
+	<meta property='og:image:width' content="320">
+	<meta property='og:image:height' content="180">
+	<meta property='og:image:type' content="image/jpeg">
+	<meta property='og:site_name' content="https://akumar2425.github.io/Portfolio/">
+
+	<meta property='author' content="Arvind Kumar">
+	<meta property='article' content="og:type">
+	<meta property='article:author' content="https://akumar2425.github.io/Portfolio/">
+
+	<meta property='twitter:title' content="Arvind Kumar | Full Stack Developer">
+	<meta property="twitter:description" content="I am a Fresher">
+	<meta property='twitter:url' content="https://akumar2425.github.io/Portfolio/media/Arvind-photo.png">
+	<meta property='twitter:domain' content="https://akumar2425.github.io/Portfolio/">
+	<meta property='twitter:card' content="summary">
+	<meta property='twitter:creator' content="@https://twitter.com/akumar2425">
+	<meta property='twitter:label1' content="Written by">
+	<meta property='twitter:label2' content="Est. reading time">
+	<meta property='twitter:data1' content="Arvind Kumar">
+	<meta property='twitter:data2' content="3 minutes">
+
+	<!-- Favicons -->
+	<link href="assets/img/favicon.ico" rel="icon">
+	<link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+	<link href="assets/vendor/style.css" rel="stylesheet">
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.0/dist/css/bootstrap.min.css" crossorigin="anonymous">
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/boxicons/2.1.0/css/boxicons.min.css" rel="stylesheet">
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" rel="stylesheet">
+
+
+	<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6322911353002272" crossorigin="anonymous"></script>
+	<script>document.documentElement.className = document.documentElement.className.replace("no-js", "js");</script>
+
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-YVYGSQ87DY"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag() { dataLayer.push(arguments); }
+		gtag('js', new Date());
+		gtag('config', 'G-YVYGSQ87DY');
+	</script>
+
+</head>
+
+<!-- -------------------------------------------------------------------------------------------
+									Nav Bar Section
+-------------------------------------------------------------------------------------------- -->
+<body ng-app="myApp" ng-controller="myAppController">
+
+	<button type="button" class="mobile-nav-toggle d-xl-none"><i class="icofont-navigation-menu"></i></button>
+
+	<header id="header" class="d-flex flex-column justify-content-center">
+
+		<nav class="nav-menu">
+			<ul>
+				<li class="active"><a href="#hero"><i class="bx bx-home"></i> <span>Home</span></a></li>
+				<li><a href="#about"><i class="bx bx-user"></i> <span>About</span></a></li>
+				<li><a href="#skills"><i class="bx bx-trending-up"></i> <span>Skills</span></a></li>
+				<li><a href="#achievement"><i class="bx bx-trophy"></i> <span>Achievement</span></a></li>
+				<li><a href="#certification"><i class="bx bx-award"></i> <span>Certification</span></a></li>
+				<li><a href="#resume"><i class="bx bx-file-blank"></i> <span>Resume</span></a></li>
+				<li><a href="#recommendation"><i class="bx bx-like"></i> <span>Recommendations</span></a></li>
+				<li><a href="#contact"><i class="bx bx-envelope"></i> <span>Contact</span></a></li>
+				<li style="cursor: pointer;"><a onclick="myFunction()"><i class="bx bx-sun"></i> <span id="toChange">Dark Mode of this Website</span></a></li>
+			</ul>
+		</nav>
+
+		<!-- END NAV Section -->
+	
+<!-- -------------------------------------------------------------------------------------------
+					Hero Section
+-------------------------------------------------------------------------------------------- -->
+
+	</header>
+
+	<section id="hero" class="d-flex flex-column justify-content-center">
+		<div class="container container-class">
+			<h1>{{ fullName }}</h1>
+			<p>I'm <span class="typed" id="typing"></span></p>
+			<div class="social-links">
+				<a ng-repeat="link in links" target="_blank" href="{{ link.href }}" class="{{ link.name }}"><i class="{{ link.class }}"></i></a>
+			</div>
+		</div>
+		<div id="particles-js"></div>
+	</section>
+	<!-- END Hero Section -->
+
+<!-- -------------------------------------------------------------------------------------------
+							About Section
+-------------------------------------------------------------------------------------------- -->
+
+	<main id="main">
+
+		<!-- About -->
+		<section id="about" class="about">
+			<div class="container">
+
+				<div class="section-title">
+					<h2 id="changeColor0">About</h2>
+				</div>
+
+				<br>
+
+				<div class="row">
+					<div class="col-lg-4">
+						<img ng-src="{{ imageUrl }}" class="img-fluid" alt="">
+					</div>
+					<div class="col-lg-8 pt-4 pt-lg-0 content">
+						<h3 id="Colors0">{{ fullName }}</h3>
+						<p class="font-italic">{{ about }}</p>
+
+						<div class="row">
+							<div class="col-lg-6">
+								<ul>
+									<li><i class="icofont-rounded-right"></i> <strong>Website:</strong><a href="{{ website }}"> {{ website }}</a></li>
+									<li><i class="icofont-rounded-right"></i> <strong>Phone:</strong> {{ phone }}</li>
+									<li><i class="icofont-rounded-right"></i> <strong>City:</strong> {{ location }}</li>
+								</ul>
+							</div>
+							<div class="col-lg-6">
+								<ul>
+									<li><i class="icofont-rounded-right"></i> <strong>Age:</strong> {{ age }}</li>
+									<li><i class="icofont-rounded-right"></i> <strong>Degree:</strong> {{ degree }}</li>
+									<li><i class="icofont-rounded-right"></i> <strong>Email:</strong> {{ email }}</li>
+								</ul>
+							</div>
+						</div>
+						<p><strong>Summary : </strong><span>{{ summary }}</span></p>
+					</div>
+				</div>
+
+			</div>
+		</section>
+		<!-- END About Section -->
+
+<!-- -------------------------------------------------------------------------------------------
+					Skill Section
+-------------------------------------------------------------------------------------------- -->
+		<section id="skills" class="skills section-bg">
+			<div class="container">
+
+				<div class="section-title">
+					<h2 id="changeColor1">Skills</h2>
+					<p>These are the Skills I work upon Daily to improve them Day by Day</p>
+				</div>
+
+				<div class="row skills-content">
+					<div class="col-lg-6" ng-repeat="skill in skills">
+						<div class="progress">
+							<span id="Color{{$index}}" class="skill">{{ skill.name }} <i class="val">{{ skill.performance }}%</i></span>
+							<div class="progress-bar-wrap">
+								<div class="progress-bar" style="width:{{ skill.performance }}%;"></div>
+							</div>
+						</div>
+					</div> 
+				</div>
+			</div>
+		</section>
+		<!-- END Skill Section -->
+
+<!-- -------------------------------------------------------------------------------------------
+						Achievment Section
+-------------------------------------------------------------------------------------------- -->
+		<section id="achievement" class="skills section-bg">
+			<div class="container">
+
+				<div class="section-title">
+					<h2 id="changeColor2">Achievement</h2>
+					<p>These are the Skills I work upon Daily to Improve them Day by Day</p>
+				</div>
+
+				<div class="row skills-content">
+
+					<div class="col-lg-6 text-center">
+						<a href="assets/img/trophy.png" data-gall="achievementGallery" class="venobox imageElement" title="{{ certification.title }}">
+							<img src="assets/img/trophy0.png" alt="" width="300px">
+						</a>
+					</div>
+
+					<div class="col-lg-6">
+						<lu>
+							<li class="padding-reward" ng-repeat="achievement in achievements">{{ achievement.paragraph }}</li>
+						</lu>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- End Achievement Section -->
+
+	<!-- -------------------------------------------------------------------------------------------
+								Certificate Section
+	-------------------------------------------------------------------------------------------- -->
+		<section id="certification" class="skills section-bg">
+			<div class="container">
+
+				<div class="section-title">
+					<h2 id="changeColor3">Certifications</h2>
+					<p>These are the Certification Which I have achieves till now.</p>
+				</div>
+
+				<div class="row skills-content">
+					<div id="owl-demo" class="owl-carousel owl-theme">
+						<div class="item" ng-repeat="certification in certifications">
+							<a href="{{ certification.imageUrl }}" data-gall="certificationGallery" class="venobox imageElement" title="{{ certification.title }}">
+								<img ng-src="{{ certification.imageUrl_small }}" class="img-fluid certificationImage" alt="" >
+							</a>
+							<p class="font-italic text-center">{{ certification.title }}</p>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</section>
+		<!-- END Certificate Section -->
+
+	<!-- -------------------------------------------------------------------------------------------
+								Resume Section
+	-------------------------------------------------------------------------------------------- -->
+		<section id="resume" class="resume">
+			<div class="container">
+
+				<div class="section-title">
+					<h2 id="changeColor4">Resume</h2>
+					<p><span>My resume is all that describes me more than myself</span> </p>
+					<span><a href="media/ArvindKumar-Resume.pdf"><button style="margin-top: 1em;"class="btn btn-primary"><span style="scale: 1.5" class="bx bx-cloud-download"></span>Click Here to see my Resume</button></a> </span>
+				</div>
+
+				<div class="row">
+					<div class="col-lg-6">
+						<h3 id="Colors2" class="resume-title">Education</h3>
+						<div class="resume-item" ng-repeat="education in educations">
+							<h4>{{ education.name }}</h4>
+							<h5 id="toggle3">{{ education.duration }}</h5>
+							<p><em>{{ education.college }}</em></p>
+							<p>{{ education.message }}</p>
+						</div>
+					</div>
+
+					
+				</div>
+
+			</div>
+		</section>
+		<!-- END Resume Section -->
+
+
+		<!-- Recommendations -->
+		<section id="recommendation" class="portfolio section-bg">
+			<div class="container">
+
+				<div class="section-title">
+					<h2 id="changeColor5">Recommendations</h2>
+				</div>
+
+				<div class="row skills-content">
+					<div id="recommendations" class="owl-carousel owl-theme">
+						<div class="item" ng-repeat="member in recommendations">
+							<div class="item-design">
+								<div class="member-name">{{ member.name }}</div>
+								<div class="member-message">{{ member.message }}</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</section>
+
+		<!-- Contact -->
+		<section id="contact" class="contact">
+			<div class="container">
+
+				<div class="section-title">
+					<h2 id="changeColor6">Contact</h2>
+				</div>
+
+				<div class="row mt-1">
+
+					<div class="col-lg-4">
+
+						<div class="info" id="getElem">
+							<div class="address">
+								<i class='bx bxs-map' ></i>
+								<h4 id="Colors4">Location:</h4>
+								<p>{{ location }}</p>
+							</div>
+
+							<div class="email">
+								<i class='bx bx-mail-send'></i>
+								<h4 id="Colors5">Email:</h4>
+								<p>{{ email }}</p>
+							</div>
+
+							<div class="phone">
+								<i class='bx bxs-phone' ></i>
+								<h4 id="Colors6">Call:</h4>
+								<p>{{ phone }}</p>
+							</div>
+
+						</div>
+
+					</div>
+
+					<div class="col-lg-8 mt-5 mt-lg-0">
+
+						<form id="formID" action="/" method="post" role="form" class="php-email-form">
+							<div class="form-row">
+								<div class="col-md-6 form-group">
+									<input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" required />
+									<div class="validate"></div>
+								</div>
+								<div class="col-md-6 form-group">
+									<input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" required />
+									<div class="validate"></div>
+								</div>
+							</div>
+							<div class="form-group">
+								<input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" required />
+								<div class="validate"></div>
+							</div>
+							<div class="form-group">
+								<textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Message" required></textarea>
+								<div class="validate"></div>
+							</div>
+							<div class="mb-3">
+								<div class="loading">Loading</div>
+								<div class="error-message"></div>
+								<div class="sent-message">Your message has been sent. Thank you!</div>
+							</div>
+							<div class="text-center"><button type="submit">Send Message</button></div>
+						</form>
+
+					</div>
+
+				</div>
+
+			</div>
+		</section>
+
+	</main>
+
+	<footer id="footer">
+		<div class="container">
+			<h3>{{ fullName }}</h3>
+			<p>I am a Full Stack Developer. I work with both the front and back ends of a website or application on multiple technologies.</p>
+			<div class="social-links">
+				<a ng-repeat="link in links" target="_blank" href="{{ link.href }}" class="{{ link.name }}"><i class="{{ link.class }}"></i></a>
+			</div>
+			
+			<div class="credits">
+				Designed by &hearts; <a href="{{ website }}">{{ firstName }}</a>
+			</div>
+		</div>
+	</footer>
+
+	<a href="#" class="back-to-top"><i class="bx bx-up-arrow-alt"></i></a>
+
+	<script src="data.js"></script>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.13.2/jquery-ui.min.js"></script>
+	
+	<script src="assets/vendor/main.js"></script>
+	<script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+	<script src="assets/vendor/particles-app.js"></script>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+</body>
+
+</html>
