@@ -165,7 +165,7 @@ app.controller("myAppController", function ($scope, $window) {
 		}, {
 			name: 'instagram',
 			class: 'bx bxl-instagram',
-			href: 'https://www.instagram.com/complicated_ak/'
+			href: 'https://www.instagram.com/_arvindsharma.official/'
 		}, {
 			name: 'linkedin',
 			class: 'bx bxl-linkedin',
